@@ -46,8 +46,8 @@ export default {
       isShowLogin: true,
       isShowRegister: false,
       login: {
-        username: 'hunger',
-        password: '123456',
+        username: '',
+        password: '',
         notice: '请输入用户名和密码',
         isError: false,
       },
