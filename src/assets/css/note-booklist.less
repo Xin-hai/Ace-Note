@@ -1,0 +1,82 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+header {
+  width: calc(100vw - 56px);
+  height: 45px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  position: relative;
+
+  .btn{
+    margin-left: 24px;
+    position: absolute;
+    font-size: 12px;
+    cursor: pointer;
+    color: #666;
+    border-radius: 2px;
+  }
+  .btn .iconfont {
+    font-size: 12px;
+  }
+}
+
+main{
+  padding: 30px 40px;
+  height: calc(100vh - 45px);
+  overflow: scroll;
+
+  .error-msg {
+    font-size: 12px;
+    color: red;
+  }
+}
+
+.layout{
+  max-width: 1000px;
+  margin: 0 auto;
+  h3{
+    font-size: 14px;
+    color: black;
+  }
+  .book-list {
+
+    margin-top: 10px;
+    color: #666;
+    background: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 6px;
+    span {
+      font-weight: bold;
+      font-size: 12px;
+      color: rgb(179, 192, 200);
+    }
+    .action,.date{
+      float: right;
+      margin-left: 10px;
+    }
+
+    .notebook{
+      display: block;
+      cursor: pointer;
+      .iconfont{
+        margin-right: 4px;
+        color: #42b983;
+      }
+    }
+  }
+}
+
+main a.notebook:hover{
+  background-color: #f7fafd;
+}
+main a.notebook div {
+  padding: 12px 12px;
+  border-bottom: 1px solid #ebebeb;
+}
