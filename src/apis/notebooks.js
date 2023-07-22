@@ -34,7 +34,7 @@ export default {
     return new Promise((resolve, reject) => {
       request(URL.ADD,'POST',{title})
         .then(res => {
-          res.data.createdAtimproved = improvedDate(res.data.createdAt)
+          res.data.createdAtImproved = improvedDate(res.data.createdAt)
           res.data.updatedAtImproved = improvedDate(res.data.updatedAt)
           resolve(res)
         }).catch(err=>{
